@@ -12,11 +12,11 @@
     <noscript>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap"/>
     </noscript>
-    <link href="static/css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
-    <link href="static/css/bootstrap-icons/bootstrap-icons.css?ver=1.2.0" rel="stylesheet">
-    <link href="static/css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
-    <link href="static/css/aos.css?ver=1.2.0" rel="stylesheet">
-    <link href="static/css/main.css?ver=1.2.0" rel="stylesheet">
+    <link href="css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
+    <link href="css/bootstrap-icons/bootstrap-icons.css?ver=1.2.0" rel="stylesheet">
+    <link href="css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
+    <link href="css/aos.css?ver=1.2.0" rel="stylesheet">
+    <link href="css/main.css?ver=1.2.0" rel="stylesheet">
     <noscript>
       <style type="text/css">
         [data-aos] {
@@ -34,18 +34,12 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto me-2">
               <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+              <!-- <li class="nav-item"><a class="nav-link" href="#services">Services</a></li> -->
               <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
               <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-              <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+              <!-- <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li> -->
               <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/hilmi-al-biruni/">LinkedIn</a></li>
               <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-              <ul class="navbar-nav pull-right">
-                <a class="nav-item nav-link text-text-secondary" th:href="@{/user/add}">Register</a>
-              </ul>
-              <ul class="navbar-nav pull-right">
-                <a class="nav-item nav-link text-text-secondary" th:href="@{/logout}">Log out</a>
-              </ul>
             </ul>
           </div>
         </div>
@@ -60,7 +54,7 @@
         <div class="col-lg-6 p-2"><img class="img-fluid" src="images/illustrations/hello3.svg" alt="hello"/></div>
         <div class="col-lg-6">
           <div class="mt-5">
-            <h2 class="lead text-uppercase mb-1" th:text="'Halo '+${#httpServletRequest.remoteUser}+'!'"></h2>
+            <h2 class="lead text-uppercase mb-1" th:text="'Halo User"></h2>
             <h1 class="intro-title marker" data-aos="fade-left" data-aos-delay="50">Selamat Datang di My Galaxy</h1>
             <p class="lead fw-normal mt-3" data-aos="fade-up" data-aos-delay="100">Disini, kamu akan mengetahui hal-hal tentang saya. Tetapi, siapa sih saya? Yuk scroll kebawah ^_^</p>
             <div class="social-nav" data-aos="fade-up" data-aos-delay="200">
@@ -121,7 +115,7 @@
             <div class="pb-1">Status:</div>
           </div>
           <div class="col-sm-10">
-            <div class="pb-1 fw-bolder">Available</div>
+            <div class="pb-1 fw-bolder">Looking for Job</div>
           </div>
         </div>
       </div>
@@ -167,7 +161,7 @@
           <div class="py-1">
             <div class="d-flex text-small fw-bolder"><span class="me-auto">HTML5</span><span>80%</span></div>
             <div class="progress my-1">
-              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="100" data-aos-anchor=".skills-section" style="width: 90%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="100" data-aos-anchor=".skills-section" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
           <div class="py-1">
@@ -185,7 +179,7 @@
           <div class="py-1">
             <div class="d-flex text-small fw-bolder"><span class="me-auto">Django</span><span>90%</span></div>
             <div class="progress my-1">
-              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 75%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
         </div>
@@ -199,19 +193,19 @@
           <div class="py-1">
             <div class="d-flex text-small fw-bolder"><span class="me-auto">Canva</span><span>95%</span></div>
             <div class="progress my-1">
-              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="500" data-aos-anchor=".skills-section" style="width: 70%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="500" data-aos-anchor=".skills-section" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
           <div class="py-1">
             <div class="d-flex text-small fw-bolder"><span class="me-auto">MySQL</span><span>75%</span></div>
             <div class="progress my-1">
-              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="600" data-aos-anchor=".skills-section" style="width: 60%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="600" data-aos-anchor=".skills-section" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
           <div class="py-1">
             <div class="d-flex text-small fw-bolder"><span class="me-auto">Adobe Premier</span><span>80%</span></div>
             <div class="progress my-1">
-              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="600" data-aos-anchor=".skills-section" style="width: 60%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="600" data-aos-anchor=".skills-section" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
         </div>
@@ -233,59 +227,45 @@
               <div>Green Supply</div>
             </figcaption>
           </figure></a></div>
-      <div class="grid-item"><a href="https://github.com">
-          <figure class="portfolio-item"><img src="images/portfolio/greensupply.png" data-bp="images/portfolio/greensupply(1).jpg" data-caption="https://ristek.link/PrototypeGreenSupply"/>
+      <div class="grid-item"><a href="https://www.figma.com/proto/X65JDpMjq3ZWBWM6XJuB4w/Untitled-(Copy)?page-id=0%3A1&node-id=8%3A2&viewport=172%2C468%2C0.16229331493377686&scaling=scale-down">
+          <figure class="portfolio-item"><img src="images/portfolio/shine.jpg" data-bp="images/portfolio/shine.jpg" data-caption="https://www.figma.com/proto/X65JDpMjq3ZWBWM6XJuB4w/Untitled-(Copy)?page-id=0%3A1&node-id=8%3A2&viewport=172%2C468%2C0.16229331493377686&scaling=scale-down"/>
             <figcaption> 
+              <h4 class="h5 mb-0">Prototype Mobile App</h4>
+              <div>Figma</div>
+            </figcaption>
+          </figure></a></div>
+      <div class="grid-item"><a href="https://www.youtube.com/@leemy48">
+          <figure class="portfolio-item"><img src="images/portfolio/adobepremier.jpg" data-bp="images/portfolio/yoru.gif" data-caption="https://www.youtube.com/@leemy48"/>
+            <figcaption> 
+              <h4 class="h5 mb-0">Adobe Premier</h4>
+              <div>Leemy Youtube</div>
+            </figcaption>
+          </figure></a></div>
+      <div class="grid-item"><a href="https://co-ass.herokuapp.com/">
+          <figure class="portfolio-item"><img src="images/portfolio/coass.jpg" data-bp="images/portfolio/coass.jpg"/>
+            <figcaption>
               <h4 class="h5 mb-0">Web Development</h4>
-              <div>GitHub.com</div>
+              <div>Django</div>
             </figcaption>
           </figure></a></div>
-      <div class="grid-item"><a href="https://soundcloud.com/">
-          <figure class="portfolio-item"><img src="images/portfolio/3-small.png" data-bp="images/portfolio/3.jpg" data-caption="Example of an optional caption."/>
-            <figcaption> 
-              <h4 class="h5 mb-0">Audio Mixing</h4>
-              <div>Soundcloud.com</div>
-            </figcaption>
-          </figure></a></div>
-      <div class="grid-item"><a href="https://www.adobe.com/">
-          <figure class="portfolio-item"><img src="images/portfolio/4-small.png" data-bp="images/portfolio/4.jpg"/>
+      <div class="grid-item"><a href="https://gitlab.cs.ui.ac.id/raihansyah.yoga/ta_b_syn_65">
+          <figure class="portfolio-item"><img src="images/portfolio/flutter.jpg" data-bp="images/portfolio/flutter.jpg"/>
             <figcaption>
-              <h4 class="h5 mb-0">Video Editing</h4>
-              <div>Adobe After Effects</div>
-            </figcaption>
-          </figure></a></div>
-      <div class="grid-item"><a href="https://www.adobe.com/">
-          <figure class="portfolio-item"><img src="images/portfolio/5-small.png" data-bp="images/portfolio/5.jpg"/>
-            <figcaption>
-              <h4 class="h5 mb-0">Photography</h4>
-              <div>Adobe Photoshop</div>
-            </figcaption>
-          </figure></a></div>
-      <div class="grid-item"><a href="https://www.android.com/">
-          <figure class="portfolio-item"><img src="images/portfolio/6-small.png" data-bp="images/portfolio/6.jpg"/>
-            <figcaption>
-              <h4 class="h5 mb-0">App Development</h4>
-              <div>Android</div>
-            </figcaption>
-          </figure></a></div>
-      <div class="grid-item"><a href="https://flutter.dev/">
-          <figure class="portfolio-item"><img src="images/portfolio/7-small.png" data-bp="images/portfolio/7.jpg"/>
-            <figcaption>
-              <h4 class="h5 mb-0">App Design</h4>
+              <h4 class="h5 mb-0">Mobile Development</h4>
               <div>Flutter</div>
             </figcaption>
           </figure></a></div>
-      <div class="grid-item"><a href="https://flutter.dev/">
-          <figure class="portfolio-item"><img src="images/portfolio/8-small.png" data-bp="images/portfolio/8.jpg"/>
+      <div class="grid-item"><a href="https://gitlab.cs.ui.ac.id/hilmi.albiruni/tutorial-apap">
+          <figure class="portfolio-item"><img src="images/portfolio/springboot.jpg" data-bp="images/portfolio/springboot1.jpg"/>
             <figcaption>
-              <h4 class="h5 mb-0">App Development</h4>
-              <div>Flutter</div>
+              <h4 class="h5 mb-0">Web Development</h4>
+              <div>Springboot</div>
             </figcaption>
           </figure></a></div>
     </div>
   </div>
 </div>
-<div class="section px-3 px-lg-4 pt-5" id="experience">
+<!-- <div class="section px-3 px-lg-4 pt-5" id="experience">
   <div class="container-narrow">
     <div class="text-center mb-5">
       <h2 class="marker marker-center">Experience</h2>
@@ -357,7 +337,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 <!--<div class="section px-3 px-lg-4 pt-5" id="testimonials">-->
 <!--  <div class="container-narrow">-->
 <!--    <div class="text-center mb-5">-->
@@ -413,7 +393,7 @@
         <div class="bg-light my-2 p-3 pt-2"><form action="https://formspree.io/your@email.com"
     method="POST">
     <div class="form-group my-2">
-      <label for="name" class="form-label fw-bolder">Name</label>
+      <label for="name" class="form-label fw-bolder">Nama</label>
       <input class="form-control" type="text" id="name" name="name" required>
     </div>
     <div class="form-group my-2">
@@ -421,7 +401,7 @@
       <input class="form-control" type="email" id="email" name="_replyto" required>
     </div>
   <div class="form-group my-2">
-    <label for="message" class="form-label fw-bolder">Message</label>
+    <label for="message" class="form-label fw-bolder">Pesan</label>
     <textarea class="form-control" style="resize: none;" id="message" name="message" rows="4" required></textarea>
   </div>
   <button class="btn btn-primary mt-2" type="submit">Send</button>
@@ -430,9 +410,9 @@
       </div>
       <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
         <div class="mt-3 px-1">
-          <div class="h5">Let’s talk how I can help you!</div>
-          <p>If you like my work and want to avail my services then drop me a message using the contact form. </p>
-          <p>Or get in touch using my email, skype or my contact number.</p>
+          <div class="h5">Siapa tahu saya bisa bantu</div>
+          <p>Jika anda tertarik dengan portofolio saya, bisa dengan mengirim pesan lewat field yang disediakan </p>
+          <p>Atau kontak saya melalui kontak dibawah ini</p>
           <p>See you!</p>
         </div>
         <div class="mt-53 px-1">
@@ -441,19 +421,13 @@
               <div class="pb-1">Email:</div>
             </div>
             <div class="col-sm-10">
-              <div class="pb-1 fw-bolder">walter@company.com</div>
-            </div>
-            <div class="col-sm-2">
-              <div class="pb-1">Skype:</div>
-            </div>
-            <div class="col-sm-10">
-              <div class="pb-1 fw-bolder">username@skype.com</div>
+              <div class="pb-1 fw-bolder">hilmi.albiruni48@gmail.com</div>
             </div>
             <div class="col-sm-2">
               <div class="pb-1">Phone:</div>
             </div>
             <div class="col-sm-10">
-              <div class="pb-1 fw-bolder">+0718-111-0011</div>
+              <div class="pb-1 fw-bolder">0895392525133</div>
             </div>
           </div>
         </div>
@@ -464,16 +438,15 @@
 <footer class="pt-4 pb-4 text-center bg-light">
   <div class="container">
     <div class="my-3">
-      <div class="h4">Walter Patterson</div>
-      <p>Web Developer & Mobile Application Developer</p>
+      <div class="h4">Hilmi Al Biruni</div>
+      <p>Undergraduate Information System</p>
       <div class="social-nav">
         <nav role="navigation">
           <ul class="nav justify-content-center">
-            <li class="nav-item"><a class="nav-link" href="https://twitter.com/templateflip" title="Twitter"><i class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/templateflip" title="Facebook"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/templateflip" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/" title="LinkedIn"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">LinkedIn</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="https://www.behance.net/templateflip" title="Behance"><i class="fab fa-behance"></i><span class="menu-title sr-only">Behance</span></a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="https://twitter.com/templateflip" title="Twitter"><i class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a></li> -->
+            <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/profile.php?id=100088958740902" title="Facebook"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/hilmi.a.b/" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/hilmi-al-biruni/" title="LinkedIn"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">LinkedIn</span></a></li>
           </ul>
         </nav>
       </div>
